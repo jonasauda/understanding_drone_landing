@@ -2,6 +2,7 @@
 
 ## Jonas Auda, Martin Weigel, Jessica R. Cauchard and Stefan Schneegass
 
+## Abstract
 We envision the human body as a platform for fast take-off and landing of drones
 in entertainment and professional uses such as medical emergencies, rescue missions,
 or supporting police units. This new interaction modality challenges our knowledge
@@ -18,7 +19,7 @@ first insights into location preferences and themes for drones landing on the hu
 body.
 
 
-## Citation:
+## Citation/BibTeX
 
 ```
 @inproceedings{10.1145/3447526.3472031,
