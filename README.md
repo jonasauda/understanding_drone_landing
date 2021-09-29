@@ -1,6 +1,6 @@
 # Understanding Drone Landing on the Human Body
 
-Jonas Auda, Martin Weigel, Jessica R. Cauchard and Stefan Schneegass
+## Jonas Auda, Martin Weigel, Jessica R. Cauchard and Stefan Schneegass
 
 We envision the human body as a platform for fast take-off and landing of drones
 in entertainment and professional uses such as medical emergencies, rescue missions,
@@ -18,8 +18,9 @@ first insights into location preferences and themes for drones landing on the hu
 body.
 
 
-Citation:
+## Citation:
 
+```
 @inproceedings{10.1145/3447526.3472031,
 author = {Auda, Jonas and Weigel, Martin and Cauchard, Jessica R. and Schneegass, Stefan},
 title = {Understanding Drone Landing on the Human Body},
@@ -50,3 +51,8 @@ keywords = {Virtual Reality Study, Human-Drone Interaction, Drone, Mechanical Tu
 location = {Toulouse &amp; Virtual, France},
 series = {MobileHCI '21}
 }
+
+```
+## License
+
+MIT
