@@ -54,6 +54,8 @@ series = {MobileHCI '21}
 }
 
 ```
-## License
+## Documentation
+Available soon.
 
+## License
 MIT
