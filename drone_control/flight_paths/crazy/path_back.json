@@ -1,0 +1,18 @@
+[
+  {
+    "label": "start",
+    "x": -70,
+    "y": 1500,
+    "z": 139,
+    "checkpoint_radius": 200,
+    "resting_time": 250
+  },
+  {
+    "label": "end",
+    "x": -70,
+    "y": 1500,
+    "z": 139,
+    "disarm_height": 900,
+    "checkpoint_radius": 200
+  }
+]

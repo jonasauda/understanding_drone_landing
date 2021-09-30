@@ -1,0 +1,1 @@
+{"uri": "mongodb://localhost:27017/", "db": "ProxyDrone", "collection_flight": "flight_data", "bulk_index": 1, "p_id": 2, "t_id": 72}

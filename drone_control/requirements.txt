@@ -1,0 +1,9 @@
+pymongo==3.10.1
+numpy==1.18.2
+protobuf==3.11.3
+scipy==1.4.1
+pynput==1.6.8
+flask==1.1.2
+pyserial==3.4
+pyusb==1.0.2
+appdirs==1.4.3

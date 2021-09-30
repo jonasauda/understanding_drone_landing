@@ -1,0 +1,42 @@
+{
+  "drones": [
+    {
+      "name": "PD",
+      "type": "ProxyDrone",
+      "active": false,
+      "pid_yaw_p": 0.3,
+      "pid_yaw_i": 0,
+      "pid_yaw_d": 0.3,
+      "pid_pitch_p": 0.1,
+      "pid_pitch_i": 0.0,
+      "pid_pitch_d": 0.1,
+      "pid_roll_p": 0.1,
+      "pid_roll_i": 0.0,
+      "pid_roll_d": 0.1,
+      "pid_throttle_p": 0.7,
+      "pid_throttle_i": 0.0,
+      "pid_throttle_d": 0.7,
+      "safety_radius": 1000,
+      "path": "proxy/path_hand.json"
+    },
+    {
+      "name": "CrazyFlie",
+      "type": "CrazyFlie",
+      "active": true,
+      "pid_yaw_p": 1.0,
+      "pid_yaw_i": 0.0,
+      "pid_yaw_d": 1.0,
+      "pid_pitch_p": 1.0,
+      "pid_pitch_i": 0.0,
+      "pid_pitch_d": 1.0,
+      "pid_roll_p": 1.0,
+      "pid_roll_i": 0.0,
+      "pid_roll_d": 1.0,
+      "pid_throttle_p": 1.4,
+      "pid_throttle_i": 0.0,
+      "pid_throttle_d": 1.4,
+      "safety_radius": 1000,
+      "path": "crazy/path_hand.json"
+    }
+  ]
+}
