@@ -57,5 +57,7 @@ series = {MobileHCI '21}
 ## Documentation
 Available soon.
 
+We are currently in the process of finalizing the code base. If you already want to use the code feel free to write an email to: jonas.auda@uni-due.de if you encounter any problems.
+
 ## License
 MIT
