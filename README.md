@@ -2,6 +2,9 @@
 
 ## Jonas Auda, Martin Weigel, Jessica R. Cauchard and Stefan Schneegass
 
+## Contact
+jonas.auda@uni-due.de
+
 ## Abstract
 We envision the human body as a platform for fast take-off and landing of drones
 in entertainment and professional uses such as medical emergencies, rescue missions,
