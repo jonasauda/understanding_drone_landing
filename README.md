@@ -15,7 +15,7 @@ drones and humans. We first investigated the suitability of various body locatio
 for landing in an online study (N = 159). Our results, presented as body maps, show
 that the hand and upper back are particularly well-suited body locations. We further
 tested these findings in a follow-up study (N = 12), in which participants experienced
-drones landing on their bodies through carefully designed and pre-recorded 360°videos.
+drones landing on their bodies through carefully designed and pre-recorded 360° videos.
 This immersion into the landing scenarios helped us to identify common themes and
 research approaches for different body parts. Taken together, the findings provide
 first insights into location preferences and themes for drones landing on the human
@@ -57,15 +57,26 @@ series = {MobileHCI '21}
 }
 
 ```
-## Documentation
+# Documentation
+
+## Requirements
 
 This project relys on a Optical tracking system. Therefore, to run this project you need to stream tracking data (position and rotation) of the drones to this framework.
 
 We use VinteR (https://github.com/jonasauda/VinteR) to stream our data from OptiTrack Motive to our application. You can implement your own adapter to receive tracking data in vinter_receiver.py
 
 
+## Configuration
+
+You can configure drones and flightpaths in this framework.
+
+1. PID values can be configured in [drones.json](drone_control/drones.json)
+
+
+
+
 
 If you have any questions, feel free to write an email to: jonas.auda@uni-due.de
 
-## License
+# License
 MIT
