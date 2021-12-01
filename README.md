@@ -74,7 +74,8 @@ You can configure drones and flightpaths in this framework.
 2. Each drone has a flight path attribute that specifies a set of waypoints that the drone should follow.
 3. Here is a example of a flight path [path_back.json](drone_control/flight_paths/crazy/path_back.json).
 4. The app can be started from [proxy_drone_app.py](drone_control/proxy_drone_app.py)
-5. 
+5. In [drone.py](drone_control/drones/drone.py) you can integrate your tracking system. You need to provide a centroid (position (x,y,z)) and a rotation (quaternion (x,y,z,w) or in Euler angles).
+6. This data is then retrieved by the "control_drone" loop to steer the drone.
 
 If you have any questions, feel free to write an email to: jonas.auda@uni-due.de
 
