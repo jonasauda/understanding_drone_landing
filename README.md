@@ -70,11 +70,11 @@ We use VinteR (https://github.com/jonasauda/VinteR) to stream our data from Opti
 
 You can configure drones and flightpaths in this framework.
 
-1. PID values can be configured in [drones.json](drone_control/drones.json)
-
-
-
-
+1. PID values can be configured in [drones.json](drone_control/drones.json).
+2. Each drone has a flight path attribute that specifies a set of waypoints that the drone should follow.
+3. Here is a example of a flight path [path_back.json](drone_control/flight_paths/crazy/path_back.json).
+4. The app can be started from [proxy_drone_app.py](drone_control/proxy_drone_app.py)
+5. 
 
 If you have any questions, feel free to write an email to: jonas.auda@uni-due.de
 
