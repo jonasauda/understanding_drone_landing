@@ -15,7 +15,7 @@ drones and humans. We first investigated the suitability of various body locatio
 for landing in an online study (N = 159). Our results, presented as body maps, show
 that the hand and upper back are particularly well-suited body locations. We further
 tested these findings in a follow-up study (N = 12), in which participants experienced
-drones landing on their bodies through carefully designed and pre-recorded 360°videos.
+drones landing on their bodies through carefully designed and pre-recorded 360° videos.
 This immersion into the landing scenarios helped us to identify common themes and
 research approaches for different body parts. Taken together, the findings provide
 first insights into location preferences and themes for drones landing on the human
@@ -57,15 +57,29 @@ series = {MobileHCI '21}
 }
 
 ```
-## Documentation
+# Documentation
+
+## Requirements
 
 This project relys on a Optical tracking system. Therefore, to run this project you need to stream tracking data (position and rotation) of the drones to this framework.
 
 We use VinteR (https://github.com/jonasauda/VinteR) to stream our data from OptiTrack Motive to our application. You can implement your own adapter to receive tracking data in vinter_receiver.py
 
 
+## Configuration
+
+You can configure drones and flightpaths in this framework.
+
+1. PID values can be configured in [drones.json](drone_control/drones.json).
+2. Currently, we do not have our own PID controller. We suggest to use this controller: [PID Controller](https://pypi.org/project/simple-pid/).
+3. To integrate a CrazyFlie you need to use the [crazyflie-lib-python](https://github.com/bitcraze/crazyflie-lib-python).
+4. Each drone has a flight path attribute that specifies a set of waypoints that the drone should follow.
+5. Here is a example of a flight path [path_back.json](drone_control/flight_paths/crazy/path_back.json).
+6. The app can be started from [proxy_drone_app.py](drone_control/proxy_drone_app.py)
+7. In [drone.py](drone_control/drones/drone.py) you can integrate your tracking system. You need to provide a centroid (position (x,y,z)) and a rotation (quaternion (x,y,z,w) or in Euler angles).
+8. This data is then retrieved by the "control_drone" loop to steer the drone.
 
 If you have any questions, feel free to write an email to: jonas.auda@uni-due.de
 
-## License
+# License
 MIT
