@@ -72,7 +72,7 @@ You can configure drones and flightpaths in this framework.
 
 1. PID values can be configured in [drones.json](drone_control/drones.json).
 2. Currently, we do not have our own PID controller. We suggest to use this controller: [PID Controller](https://pypi.org/project/simple-pid/).
-3. To integrate a CrazyFlie you need to use the (crazyflie-lib-python)[https://github.com/bitcraze/crazyflie-lib-python].
+3. To integrate a CrazyFlie you need to use the [crazyflie-lib-python](https://github.com/bitcraze/crazyflie-lib-python).
 4. Each drone has a flight path attribute that specifies a set of waypoints that the drone should follow.
 5. Here is a example of a flight path [path_back.json](drone_control/flight_paths/crazy/path_back.json).
 6. The app can be started from [proxy_drone_app.py](drone_control/proxy_drone_app.py)
