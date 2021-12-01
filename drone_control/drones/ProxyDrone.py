@@ -106,7 +106,6 @@ class ProxyDrone(Drone):
         return 400.0 * roll + 1500.0
 
     def map_throttle(self, throttle):
-        # TODO: maybe if drone is above target the additional term needs to be smaller than hover throttle
         return 500.0 * throttle + 1550.0
 
     def land(self, drone_height):
@@ -118,15 +117,12 @@ class ProxyDrone(Drone):
     def steer(self, yaw, pitch, roll, throttle, drone_pos):
         #print("PPM (un-clamped) yaw =", yaw, "pitch =", pitch, "roll =", roll, "throttle =", throttle)
 
-        # TODO: check if this is bad
         yaw = self.map_yaw(yaw)
         pitch = self.map_pitch(pitch)
         roll = self.map_roll(roll)
         throttle = self.map_throttle(throttle)
 
         #print("PPM (un-clamped) yaw =", yaw, "pitch =", pitch, "roll =", roll, "throttle =", throttle)
-
-        # TODO: find limit that fit drone
 
         base = 1500
         _range = 25
@@ -148,7 +144,6 @@ class ProxyDrone(Drone):
         roll = int(np.round(max(roll_min, min(roll_max, roll))))
         #throttle = int(np.round(max(throttle_min, min(throttle_max, throttle))))
 
-        # TODO: remove this to fly with automatic throttle
         # throttle = self.throttle
 
         if drone_pos[1] < self.min_controlling_height:

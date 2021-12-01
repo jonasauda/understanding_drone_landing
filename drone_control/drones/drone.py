@@ -275,7 +275,6 @@ def control_drone(drone, vinter_receiver):
 
             way_point = drone.way_points[drone.way_point_index]
 
-            # TODO: maybe set rotation to target rotation on end
             drone.target_rotation = [0, 0, 0]
             drone.target_position = [
                 way_point.x,
