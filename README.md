@@ -71,11 +71,12 @@ We use VinteR (https://github.com/jonasauda/VinteR) to stream our data from Opti
 You can configure drones and flightpaths in this framework.
 
 1. PID values can be configured in [drones.json](drone_control/drones.json).
-2. Each drone has a flight path attribute that specifies a set of waypoints that the drone should follow.
-3. Here is a example of a flight path [path_back.json](drone_control/flight_paths/crazy/path_back.json).
-4. The app can be started from [proxy_drone_app.py](drone_control/proxy_drone_app.py)
-5. In [drone.py](drone_control/drones/drone.py) you can integrate your tracking system. You need to provide a centroid (position (x,y,z)) and a rotation (quaternion (x,y,z,w) or in Euler angles).
-6. This data is then retrieved by the "control_drone" loop to steer the drone.
+2. Currently, we do not have our own PID controller. We suggest to use this controller: [PID Controller](https://pypi.org/project/simple-pid/).
+3. Each drone has a flight path attribute that specifies a set of waypoints that the drone should follow.
+4. Here is a example of a flight path [path_back.json](drone_control/flight_paths/crazy/path_back.json).
+5. The app can be started from [proxy_drone_app.py](drone_control/proxy_drone_app.py)
+6. In [drone.py](drone_control/drones/drone.py) you can integrate your tracking system. You need to provide a centroid (position (x,y,z)) and a rotation (quaternion (x,y,z,w) or in Euler angles).
+7. This data is then retrieved by the "control_drone" loop to steer the drone.
 
 If you have any questions, feel free to write an email to: jonas.auda@uni-due.de
 
