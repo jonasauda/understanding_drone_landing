@@ -58,9 +58,14 @@ series = {MobileHCI '21}
 
 ```
 ## Documentation
-Available soon.
 
-We are currently in the process of finalizing the code base. If you already want to use the code feel free to write an email to: jonas.auda@uni-due.de if you encounter any problems.
+This project relys on a Optical tracking system. Therefore, to run this project you need to stream tracking data (position and rotation) of the drones to this framework.
+
+We use VinteR (https://github.com/jonasauda/VinteR) to stream our data from OptiTrack Motive to our application. You can implement your own adapter to receive tracking data in vinter_receiver.py
+
+
+
+If you have any questions, feel free to write an email to: jonas.auda@uni-due.de
 
 ## License
 MIT
