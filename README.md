@@ -1,6 +1,6 @@
 # Understanding Drone Landing on the Human Body
 
-## Jonas Auda, Martin Weigel, Jessica R. Cauchard and Stefan Schneegass
+Jonas Auda, Martin Weigel, Jessica R. Cauchard and Stefan Schneegass
 
 ## Contact
 jonas.auda@uni-due.de
